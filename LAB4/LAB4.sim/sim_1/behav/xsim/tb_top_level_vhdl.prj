@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LAB4.srcs/sources_1/new/MUX.vhd" \
+"../../../../LAB4.srcs/sources_1/new/clk_divider.vhd" \
+"../../../../LAB4.srcs/sources_1/new/counter.vhd" \
+"../../../../LAB4.srcs/sources_1/new/counter_for_decoder.vhd" \
+"../../../../LAB4.srcs/sources_1/new/demux.vhd" \
+"../../../../LAB4.srcs/sources_1/new/shift_register.vhd" \
+"../../../../LAB4.srcs/sources_1/new/signal_detection.vhd" \
+"../../../../LAB4.srcs/sources_1/new/hex_to_ssd.vhd" \
+"../../../../LAB4.srcs/sources_1/new/header.vhd" \
+"../../../../LAB4.srcs/sim_1/new/sim.vhd" \
+
+# Do not sort compile order
+nosort

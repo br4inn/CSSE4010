@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/brain/LAB4/LAB4.srcs/sim_1/new/sim.vhd,1726379262,vhdl,,,,tb_top_level,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/MUX.vhd,1725956239,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,mux,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/clk_divider.vhd,1725954530,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,clock_divider,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/counter.vhd,1726379262,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,sequence_counter,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/counter_for_decoder.vhd,1725953670,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,counter_for_decoder,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/demux.vhd,1726009191,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,demux,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,1726130930,vhdl,,,,top_level,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/hex_to_ssd.vhd,1725953670,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,hex_to_ssd,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/shift_register.vhd,1726375768,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,shift_register,,,,,,,,
+C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/signal_detection.vhd,1726379262,vhdl,C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd,,,signal_detector,,,,,,,,

@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Aug 15 16:46:32 2024
+# Process ID: 9416
+# Current directory: C:/Users/brain/project_1test/project_1test.runs/synth_1
+# Command line: vivado.exe -log test_locktop_async.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_locktop_async.tcl
+# Log file: C:/Users/brain/project_1test/project_1test.runs/synth_1/test_locktop_async.vds
+# Journal file: C:/Users/brain/project_1test/project_1test.runs/synth_1\vivado.jou
+# Running On: DESKTOP-T18QJ69, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 8340 MB
+#-----------------------------------------------------------
+source test_locktop_async.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 395.812 ; gain = 71.621
+Command: synth_design -top test_locktop_async -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21560
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 832.863 ; gain = 412.168
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9872] overwriting existing secondary unit 'behavioural' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/seven_segment_display.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'test_locktop_async' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/test_locktop_async.vhd:38]
+INFO: [Synth 8-3491] module 'locktop_async' declared at 'C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/locktop_async.vhd:33' bound to instance 'uut' of component 'locktop_async' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/test_locktop_async.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'locktop_async' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/locktop_async.vhd:48]
+INFO: [Synth 8-3491] module 'eight_register' declared at 'C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/eight_register.vhd:34' bound to instance 'register1' of component 'eight_register' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/locktop_async.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'eight_register' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/eight_register.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'eight_register' (0#1) [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/eight_register.vhd:41]
+INFO: [Synth 8-3491] module 'eight_register' declared at 'C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/eight_register.vhd:34' bound to instance 'register2' of component 'eight_register' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/locktop_async.vhd:111]
+INFO: [Synth 8-3491] module 'ssegDriver' declared at 'C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/ssgDriver.vhd:7' bound to instance 'seven_segment_display' of component 'ssegDriver' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/locktop_async.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'ssegDriver' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/seven_segment_display.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/seven_segment_display.vhd:53]
+ERROR: [Synth 8-690] width mismatch in assignment; target has 8 bits, source has 4 bits [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/seven_segment_display.vhd:105]
+ERROR: [Synth 8-285] failed synthesizing module 'ssegDriver' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/seven_segment_display.vhd:22]
+ERROR: [Synth 8-285] failed synthesizing module 'locktop_async' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/locktop_async.vhd:48]
+ERROR: [Synth 8-285] failed synthesizing module 'test_locktop_async' [C:/Users/brain/project_1test/project_1test.srcs/sources_1/new/test_locktop_async.vhd:38]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 922.582 ; gain = 501.887
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 0 Warnings, 1 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 15 16:46:49 2024...

@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Sep 15 14:49:34 2024
+# Process ID: 13180
+# Current directory: C:/Users/brain/LAB4/LAB4.runs/synth_1
+# Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: C:/Users/brain/LAB4/LAB4.runs/synth_1/top_level.vds
+# Journal file: C:/Users/brain/LAB4/LAB4.runs/synth_1\vivado.jou
+# Running On: DESKTOP-T18QJ69, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 8340 MB
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/brain/LAB4/LAB4.srcs/utils_1/imports/synth_1/top_level.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/brain/LAB4/LAB4.srcs/utils_1/imports/synth_1/top_level.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_level -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10288
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1222.039 ; gain = 407.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/clk_divider.vhd:11]
+WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/clk_divider.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/clk_divider.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/shift_register.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/shift_register.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'signal_detector' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/signal_detection.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'signal_detector' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/signal_detection.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'sequence_counter' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/counter.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'sequence_counter' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/counter.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'counter_for_decoder' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/counter_for_decoder.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'counter_for_decoder' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/counter_for_decoder.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/MUX.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/MUX.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'demux' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/demux.vhd:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/demux.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'demux' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/demux.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'hex_to_ssd' [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/hex_to_ssd.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'hex_to_ssd' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/hex_to_ssd.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (0#1) [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd:20]
+WARNING: [Synth 8-3848] Net MUX_OUT in module/entity top_level does not have driver. [C:/Users/brain/LAB4/LAB4.srcs/sources_1/new/header.vhd:16]
+WARNING: [Synth 8-3917] design top_level has port cn[3] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port cn[2] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port cn[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port cn[0] driven by constant 1
+WARNING: [Synth 8-7129] Port decoder_in[1] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port decoder_in[0] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MUX_OUT[1] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MUX_OUT[0] in module top_level is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1312.059 ; gain = 497.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1312.059 ; gain = 497.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1312.059 ; gain = 497.203
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1312.059 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc]
+WARNING: [Vivado 12-584] No ports matched 'MUX_OUT[2]'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MUX_OUT[2]'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MUX_OUT[3]'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MUX_OUT[3]'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carry_out'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carry_out'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'load'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'load'. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/brain/LAB4/LAB4.srcs/constrs_1/new/nexys_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1364.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1364.402 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'signal_detector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                          0000001 |                              000
+                      s1 |                          0000010 |                              001
+                      s2 |                          0000100 |                              010
+                      s3 |                          0001000 |                              011
+                      s4 |                          0010000 |                              100
+                      s5 |                          0100000 |                              101
+                      s6 |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'signal_detector'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 7     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top_level has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port cn[3] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port cn[2] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port cn[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port cn[0] driven by constant 1
+WARNING: [Synth 8-7129] Port MUX_OUT[1] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MUX_OUT[0] in module top_level is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     4|
+|4     |LUT2   |     8|
+|5     |LUT3   |    19|
+|6     |LUT4   |    20|
+|7     |LUT5   |    37|
+|8     |LUT6   |     3|
+|9     |FDCE   |    63|
+|10    |FDPE   |     2|
+|11    |FDRE   |     2|
+|12    |IBUF   |    19|
+|13    |OBUF   |    16|
+|14    |OBUFT  |     2|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1364.402 ; gain = 497.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.402 ; gain = 549.547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1364.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1364.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5a8d9b93
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 27 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1364.402 ; gain = 944.980
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/brain/LAB4/LAB4.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 15 14:50:20 2024...

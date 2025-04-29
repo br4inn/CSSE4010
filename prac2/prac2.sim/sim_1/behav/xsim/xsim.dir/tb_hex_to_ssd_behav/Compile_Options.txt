@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "tb_hex_to_ssd_behav" "xil_defaultlib.tb_hex_to_ssd" -log "elaborate.log" 

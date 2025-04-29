@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab3.srcs/sources_1/new/clockDivider.vhd" \
+"../../../../lab3.srcs/sources_1/new/counter.vhd" \
+"../../../../lab3.srcs/sources_1/new/demux.vhd" \
+"../../../../lab3.srcs/sources_1/new/sub.vhd" \
+"../../../../lab3.srcs/sources_1/new/mux.vhd" \
+"../../../../lab3.srcs/sources_1/new/hex_to_ssd.vhd" \
+"../../../../lab3.srcs/sources_1/new/head.vhd" \
+"../../../../lab3.srcs/sim_1/new/subtest.vhd" \
+
+# Do not sort compile order
+nosort
